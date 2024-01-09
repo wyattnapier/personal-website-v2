@@ -1,9 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import {React, useState} from 'react';
 import image1 from './images/powerlifting.jpg'; // powerlifting
 import image2 from './images/turkeytrot.jpg'; // running
 import Loop from './Loop.js';
+import Footer from './Footer.js';
 // import useState from 'react';
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="App">
       <Loop imagesList={imagesList} captionsList={captionsList}/>
-
+      <Footer />
       {/* put the footer in here 
             should have contact info (linkedIn and email)
             resume linked there too
