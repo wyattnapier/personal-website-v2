@@ -7,15 +7,6 @@ import { Typewriter } from 'react-simple-typewriter'; // https://www.npmjs.com/p
 
 function Caption ({dataIndex, captionsList}) {
 
-  const handleType = (count) => {
-    // access word count number
-    console.log(count)
-  }
-
-  const handleDone = () => {
-    console.log(`Never done!`)
-  }
-
   return (
     <div> {/* this wrapper is just for safekeeping */}
       <h1 style={{padding: "2vw", margin: 'auto 0', fontWeight: 'normal' }}>
@@ -24,15 +15,13 @@ function Caption ({dataIndex, captionsList}) {
 
           {/* Style will be inherited from the parent element */}
           <Typewriter
-            words={['',captionsList[dataIndex]]}
-            loop={4} // Infinity before
+            words={['', captionsList[dataIndex]]}
+            loop={Infinity} // Infinity before
             cursor
             cursorStyle='_'
             typeSpeed={70}
             deleteSpeed={50}
             delaySpeed={1000}
-            onLoopDone={handleDone}
-            onType={handleType}
           />
         </span>
       </h1>
