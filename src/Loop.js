@@ -3,6 +3,7 @@
 * add a header with my name
 * add more content: ski instructing or patrolling, hackathon, biking, family, overalls, concerts (link spotify on that one if possible), BU, CS
 * styling: round images a little bit, change background color, link colors, add margin behind footer
+* maybe move resume into images foler and rename to 'resources' or 'assets'
 */
 import React, { useEffect, useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
