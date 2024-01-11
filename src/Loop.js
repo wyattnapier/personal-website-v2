@@ -9,12 +9,17 @@ import React, { useEffect, useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 
 const ImagesComponent = ({ imagesList, captionsList }) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(Math.floor(Math.random()*imagesList.length));
   const [doneDeleting, setDoneDeleting] = useState(false);
   let deleteCount = 0;
 
   const handleSwitch = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imagesList.length);
+    let nextIndex = currentImageIndex
+    while (nextIndex == currentImageIndex) {
+      nextIndex = Math.floor(Math.random()*imagesList.length)
+    }
+    setCurrentImageIndex(nextIndex)
+    // setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imagesList.length);
     deleteCount = 0;
   };
 
@@ -29,7 +34,7 @@ const ImagesComponent = ({ imagesList, captionsList }) => {
   }
 
   return (
-    <div>
+    <div className="main-wrapper">
       <img
         src={imagesList[currentImageIndex].src}
         alt={imagesList[currentImageIndex].alt}
@@ -40,14 +45,15 @@ const ImagesComponent = ({ imagesList, captionsList }) => {
         <Typewriter
           words={[captionsList[currentImageIndex]]} // 
           loop={Infinity} // keep looping forever!
-          cursor
-          cursorStyle='_'
+          // cursor
+          // cursorStyle='_'
           typeSpeed={70}
           deleteSpeed={50}
           delaySpeed={1000}
           onDelete={handleDelete} // check if done deleting
         />
       </p>
+      {currentImageIndex==3 ? <p>Check out my <a href="https://open.spotify.com/user/wyatt~n.?si=ca4612e7bed54639">Spotify</a>!</p> : ""}
     </div>
   );
 };
