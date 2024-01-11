@@ -19,33 +19,34 @@ a {
 /* left col start */
 .left-col {
   width: 30%;
-  padding: 2vw 1vw 12vw 1vw; /* adjust at end to keep centered */
+  padding: 4vw 1vw 12vw 1vw; /* adjust at end to keep centered */
   text-align: left;
   background-color: #C4C4C4; /* really light gray */
   color: #333333;
 }
 
-.header-wrapper {
-  margin: 2vw 0; /* mainly just changes top of it */
+.header-wrapper h1 {
+  margin: 2vw 0
 }
 
-.header-wrapper h1, .header-wrapper p {
-  margin: 0.5vw 0 0 0
-}
-
-/* .footer-wrapper p {
+.header-wrapper p, .footer-wrapper p {
   margin: 0.5vw 0;
-} */
+}
 
 .contact-links, .other-links {
   margin: 3vw 0;
+}
+
+.footer-wrapper p img {
+  height: 1em;
+  margin: 0;
 }
 /* left col end */
 
 /* right col start */
 .right-col {
   width: 70%;
-  padding: 20vh 1vw; /* adjust at end to keep centered */
+  padding: 18vh 1vw; /* adjust at end to keep centered */
   text-align: center;
   background-color: #333333; /* dark gray */
   color: #C4C4C4;
@@ -53,13 +54,9 @@ a {
 
 /* loop images */
 .main-wrapper img {
-  max-height: 30vw; /* instead use max-height */
+  max-height: 60vh; /* instead use max-height */
   border-radius: 10px;
 }
 /* right col end */
 
-/* 
-.footer-wrapper {
-  margin: 2vw 0;
-  background-color: ;
-} */
+/* for media query, 768px is the max */ 
