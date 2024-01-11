@@ -42,12 +42,13 @@ a {
   height: 1em;
   margin: 0;
 }
-/* currently useless */
-/* .pdf-logo {
+/* dealing with the logos */
+[class^="logo"] {
+  /* margin-right: 1px; */
   position: relative;
-  top: 5px;
-  left: 5px;
-} */
+  top: 3px;
+  left: 2px;
+}
 /* left col end */
 
 /* right col start */
@@ -86,8 +87,6 @@ a {
   .footer-wrapper, .header-wrapper {
     margin: 2vw;
   }
-
-
 
   .right-col {
     width: 100%;
