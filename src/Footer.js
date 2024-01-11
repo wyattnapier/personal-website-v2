@@ -14,14 +14,14 @@ function Footer () {
     <div className="footer-wrapper">
       <div className="contact-links">
         {/* might have to use ul and li instead of just doing it lazily with p tags */}
-        <p>If you would like to contact me, feel feel free to reach out on either of the following platforms. My information is linked directly!</p>
+        <p>If you would like to contact me, feel feel free to reach out on either of the following platforms. My information is linked below!</p>
         <p><a href="mailto:wnapier@bu.edu"><img src={emaillogo} alt="Email logo"/> Email</a></p>
         <p><a href="https://www.linkedin.com/in/wyatt-napier/" target="_blank"><img src={linkedinlogo} alt="LinkedIn logo"/> LinkedIn</a></p>
       </div>
       <div className="other-links">
         {/* might have to use ul and li instead of just doing it lazily with p tags */}
         <p>Below are some other important links that you might want to explore.</p>
-        <p><a href={resume} target="_blank"><img src={resumelogo} alt="PDF logo"/> Resume</a></p>
+        <p><a href={resume} target="_blank"><img src={resumelogo} alt="PDF logo" className="logo-pdf"/> Resume</a></p>
         <p><a href="https://github.com/wyattnapier/"><img src={githublogo} alt="GitHub logo"/> GitHub</a></p>
         <p><a href="https://open.spotify.com/user/wyatt~n.?si=ca4612e7bed54639"><img src={spotifylogo} alt="Spotify logo"/> Spotify</a></p>
       </div>

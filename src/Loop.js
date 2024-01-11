@@ -36,24 +36,23 @@ const ImagesComponent = ({ imagesList, captionsList }) => {
   return (
     <div className="main-wrapper">
       <img
-        src={imagesList[currentImageIndex].src}
+        src={imagesList[currentImageIndex].src} // should be currentImageIndex instead
         alt={imagesList[currentImageIndex].alt}
       />
-      <div></div>
+      <div> </div>
       <p>
-        <span style={{color: 'mediumaquamarine'}}>I am </span>
+        {/* <span style={{color: 'mediumaquamarine'}}></span> */}
         <Typewriter
           words={[captionsList[currentImageIndex]]} // 
           loop={Infinity} // keep looping forever!
-          // cursor
+          cursor
           // cursorStyle='_'
           typeSpeed={70}
-          deleteSpeed={50}
-          delaySpeed={1000}
+          deleteSpeed={30}
+          delaySpeed={1500}
           onDelete={handleDelete} // check if done deleting
         />
       </p>
-      {currentImageIndex==3 ? <p>Check out my <a href="https://open.spotify.com/user/wyatt~n.?si=ca4612e7bed54639">Spotify</a>!</p> : ""}
     </div>
   );
 };

@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: 'Courier Prime', Courier, monospace;
+  scroll-behavior: none;
   /* light grey: #444444 */
 }
 
@@ -37,10 +38,16 @@ a {
   margin: 3vw 0;
 }
 
-.footer-wrapper p img {
+.footer-wrapper img {
   height: 1em;
   margin: 0;
 }
+/* currently useless */
+/* .pdf-logo {
+  position: relative;
+  top: 5px;
+  left: 5px;
+} */
 /* left col end */
 
 /* right col start */
@@ -59,4 +66,41 @@ a {
 }
 /* right col end */
 
-/* for media query, 768px is the max */ 
+/* for media query, 768px is the tablet size */ 
+@media (max-width: 767px) {
+  /* … */
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .App p {
+    font-size: 0.75em;
+  }
+
+  .left-col {
+    width: 100%;
+    padding: 0;
+  }
+
+  .footer-wrapper, .header-wrapper {
+    margin: 2vw;
+  }
+
+
+
+  .right-col {
+    width: 100%;
+    min-height: 60vh;
+    padding: 8vw 1vw 2vw 1vw;
+  }
+
+  .right-col p {
+    margin: 1vw;
+  }
+
+  .main-wrapper img {
+    max-width: 90%;
+  }
+
+}
