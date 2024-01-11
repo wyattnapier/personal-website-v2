@@ -41,7 +41,7 @@ const ImagesComponent = ({ imagesList, captionsList }) => {
       />
       <div></div>
       <p>
-        I am {/* this comment is here just to get the spacing right */}
+        <span style={{color: 'mediumaquamarine'}}>I am </span>
         <Typewriter
           words={[captionsList[currentImageIndex]]} // 
           loop={Infinity} // keep looping forever!
