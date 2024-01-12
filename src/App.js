@@ -92,7 +92,7 @@ function App() {
 
   // Define JSX based on the window width
   let content;
-  if (windowWidth > 600) {
+  if (windowWidth >= 768) {
     // big screen content
     content =  
     <div className="App">

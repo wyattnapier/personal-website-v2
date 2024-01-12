@@ -88,18 +88,47 @@ a {
     margin: 2vw;
   }
 
+  [class^="logo"] {
+    top: 2px;
+  }
+
   .right-col {
     width: 100%;
-    min-height: 60vh;
-    padding: 8vw 1vw 2vw 1vw;
+    /* min-height: 60vh; */
+    /* padding: 8vw 1vw 2vw 1vw; */
+    /* padding: 5vw 1vw 0vw 1vw; */
+    padding: 0;
   }
 
   .right-col p {
     margin: 1vw;
   }
 
-  .main-wrapper img {
-    max-width: 90%;
+  .main-wrapper {
+    padding: 1.5vw 1vw;
   }
 
+  .main-wrapper img {
+    max-width: 90%;
+    padding: 2vw 1vw 1vw 1vw;
+  }
 }
+
+@media (max-width: 800px) and (min-width: 768px) {
+  .App p {
+    font-size: 0.8em;
+  }
+
+  [class^="logo"] {
+    /* margin-right: 1px; */
+    top: 2px;
+  }
+}
+
+/* potentially just to work on the switch between short and tall images on small mobile devices */
+/* 
+@media (max-width: 320) {
+  .right-col {
+    min-height: 40vh;
+  }
+} */
