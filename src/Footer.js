@@ -14,7 +14,7 @@ function Footer () {
     <div className="footer-wrapper">
       <div className="contact-links">
         {/* might have to use ul and li instead of just doing it lazily with p tags */}
-        <p>If you would like to contact me, feel feel free to reach out on either of the following platforms. My information is linked below!</p>
+        <p>If you would like to contact me, feel free to reach out on either of the following platforms. My information is linked below!</p>
         <p><a href="mailto:wnapier@bu.edu" target="_blank"><img src={emaillogo} alt="Email logo" className="logo-email"/> Email</a></p>
         <p><a href="https://www.linkedin.com/in/wyatt-napier/" target="_blank"><img src={linkedinlogo} alt="LinkedIn logo" className="logo-linkedin"/> LinkedIn</a></p>
       </div>
