@@ -15,6 +15,7 @@ import bostonimage from './images/boston.jpg'; // Boston views
 import patrolimage from './images/wyattchairlift.jpg'; // patrol on chairlift
 import hotpotimage from './images/hotpot.jpg'; // hotpot
 import soccersoloimage from './images/soccersolo.jpg'; // soccer solo
+import bhacksimage from './images/bhacks.jpg'; // bostonhacks
 import bikingimage from './images/biking.jpg'; // biking
 import breadimage from './images/bread.jpg'; // bread meal
 import cheffingimage from './images/cheffing.jpg'; // cheffing
@@ -22,9 +23,6 @@ import growthimage from './images/growth.jpg'; // growth
 import miamibeachimage from './images/miamibeach.jpg'; // miami beach
 import mumsimage from './images/mums.jpg'; // son
 import reverebeachimage from './images/reverebeach.jpg'; // revere beach
-
-
-
 // components
 import Header from './Header.js';
 import Loop from './Loop.js';
@@ -53,6 +51,8 @@ function App() {
     { id: 13, src: bostonimage, alt: 'Boston views'},
     { id: 14, src: hotpotimage, alt: 'Hotpot in boston'},
     { id: 15, src: soccersoloimage, alt: 'Soccer'},
+    { id: 16, src: reverebeachimage, alt: 'Revere Beach'},
+    { id: 17, src: bhacksimage, alt: 'Speaking at BostonHacks'}
     // add more as needed
   ]
 
@@ -73,7 +73,8 @@ function App() {
     "I am falling in love with Boston and my life there.",
     "I am always excited to try new things, especially food.",
     "I am an *almost* retired soccer player.",
-
+    "I am almost never properly prepared for my adventures, but my friends are!",
+    "I am a member of BostonHacks; a student org that orchestrates BU's largest annual hackathon!"
   ]
   useEffect(() => {
     // Update window width when the component mounts
