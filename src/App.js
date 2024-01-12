@@ -73,7 +73,7 @@ function App() {
     "I am falling in love with Boston and my life there.",
     "I am always excited to try new things, especially food.",
     "I am an *almost* retired soccer player.",
-    "I am almost never properly prepared for my adventures, but my friends are!",
+    "I am so much happier outside and in the sun!",
     "I am a member of BostonHacks; a student org that orchestrates BU's largest annual hackathon!"
   ]
   useEffect(() => {
