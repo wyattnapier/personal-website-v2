@@ -62,8 +62,8 @@ a {
 
 /* loop images */
 .main-wrapper img {
-  max-height: 60vh; /* instead use max-height */
-  border-radius: 10px;
+  max-height: 60vh;
+  border-radius: 10px; /* is this actually doing anything? */
   max-width: 90%;
 }
 /* right col end */
