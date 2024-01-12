@@ -64,6 +64,7 @@ a {
 .main-wrapper img {
   max-height: 60vh; /* instead use max-height */
   border-radius: 10px;
+  max-width: 90%;
 }
 /* right col end */
 

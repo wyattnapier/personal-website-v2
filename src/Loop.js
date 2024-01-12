@@ -65,8 +65,8 @@ const ImagesComponent = ({ imagesList, captionsList }) => {
           cursor
           // cursorStyle='_'
           typeSpeed={70}
-          deleteSpeed={30}
-          delaySpeed={1500}
+          deleteSpeed={40}
+          delaySpeed={1800}
           onDelete={handleDelete} // check if done deleting
         />
       </p>
