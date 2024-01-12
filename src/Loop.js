@@ -1,25 +1,43 @@
 /*
-* TODO: adjust the ddealy after finish typing
-* add a header with my name
-* add more content: ski instructing or patrolling, hackathon, biking, family, overalls, concerts (link spotify on that one if possible), BU, CS
-* styling: round images a little bit, change background color, link colors, add margin behind footer
+* TODO:
+* add more content:  hackathon, biking, overalls, CS
 * maybe move resume into images foler and rename to 'resources' or 'assets'
 */
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 
+const updateIndices = (selected, indices, len) => {
+  let newIndices;
+  for (let i = 0; i < len; i++) {
+    if (indices[i] === selected) {
+      indices[i] = -1;
+      newIndices = indices.filter(index => index !== -1);
+      break;
+    }
+  }
+  if(indices.length <= 1) {
+    newIndices = [...Array(len).keys()];
+  }
+  return newIndices
+}
+
 const ImagesComponent = ({ imagesList, captionsList }) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(Math.floor(Math.random()*imagesList.length));
-  const [doneDeleting, setDoneDeleting] = useState(false);
+  const [indices, setIndices] = useState([...Array(imagesList.length).keys()]);
+  let contentLength = imagesList.length;
+  const [currentImageIndex, setCurrentImageIndex] = useState(Math.floor(Math.random()*contentLength));
+  updateIndices(currentImageIndex, indices, imagesList);
   let deleteCount = 0;
 
   const handleSwitch = () => {
     let nextIndex = currentImageIndex
-    while (nextIndex == currentImageIndex) {
-      nextIndex = Math.floor(Math.random()*imagesList.length)
+    while (nextIndex === currentImageIndex) {
+      nextIndex = indices[Math.floor(Math.random()*indices.length)];
     }
-    setCurrentImageIndex(nextIndex)
-    // setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imagesList.length);
+    setCurrentImageIndex(nextIndex);
+    console.log("indices pre update: ", indices)
+    console.log("selected to be removed: ", nextIndex);
+    setIndices(updateIndices(nextIndex, indices, contentLength));
+    console.log("indices post update: ", indices)
     deleteCount = 0;
   };
 
@@ -28,7 +46,7 @@ const ImagesComponent = ({ imagesList, captionsList }) => {
   // strings that are being typed (captions) will also be switched here
   const handleDelete = () => {
     deleteCount++;
-    if(deleteCount == captionsList[currentImageIndex].length) {
+    if(deleteCount === captionsList[currentImageIndex].length) {
       handleSwitch();
     }
   }
@@ -41,7 +59,6 @@ const ImagesComponent = ({ imagesList, captionsList }) => {
       />
       <div> </div>
       <p>
-        {/* <span style={{color: 'mediumaquamarine'}}></span> */}
         <Typewriter
           words={[captionsList[currentImageIndex]]} // 
           loop={Infinity} // keep looping forever!

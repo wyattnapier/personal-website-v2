@@ -7,6 +7,24 @@ import dwgimage from './images/dwgconcert.jpg'; // dwg concert
 import famimage from './images/family.jpg'; // family dinner
 import cousinimage from './images/cousin.jpg' // posing w/ ella
 import bananaimage from './images/banana.jpg'; // banana meal
+import hikingimage from './images/hiking.jpg'; // hiking
+import plantingimage from './images/planting.jpg'; // ctwk planting in costa rica
+import kejicanoeimage from './images/kejicanoe.jpg'; // canoeing
+import vermontimage from './images/vermont.jpg'; // VT views
+import bostonimage from './images/boston.jpg'; // Boston views
+import patrolimage from './images/wyattchairlift.jpg'; // patrol on chairlift
+import hotpotimage from './images/hotpot.jpg'; // hotpot
+import soccersoloimage from './images/soccersolo.jpg'; // soccer solo
+import bikingimage from './images/biking.jpg'; // biking
+import breadimage from './images/bread.jpg'; // bread meal
+import cheffingimage from './images/cheffing.jpg'; // cheffing
+import growthimage from './images/growth.jpg'; // growth
+import miamibeachimage from './images/miamibeach.jpg'; // miami beach
+import mumsimage from './images/mums.jpg'; // son
+import reverebeachimage from './images/reverebeach.jpg'; // revere beach
+
+
+
 // components
 import Header from './Header.js';
 import Loop from './Loop.js';
@@ -24,8 +42,17 @@ function App() {
     { id: 2, src: skiingimage, alt: 'Skiing on big pond'},
     { id: 3, src: dwgimage, alt: 'Del Water Gap concert with friends'},
     { id: 4, src: famimage, alt: 'Dinner with family'},
-    { id: 5, src: cousinimage, alt: 'Me and my cousin Ella'},
-    { id: 6, src: bananaimage, alt: 'Eating a banana'}
+    // { id: 5, src: cousinimage, alt: 'Me and my cousin Ella'},
+    // { id: 6, src: bananaimage, alt: 'Eating a banana'},
+    { id: 7, src: hikingimage, alt: 'Hiking with my sister Hailey'},
+    { id: 8, src: plantingimage, alt: 'Planting trees in Costa Rica'},
+    // { id: 9, src: kejicanoeimage, alt: 'Dog Keji and canoe'},
+    // { id: 10, src: bikingimage, alt: 'Biking'},
+    { id: 11, src: patrolimage, alt: 'Ski patrol on chairlift'},
+    { id: 12, src: vermontimage, alt: 'Vermont views'},
+    { id: 13, src: bostonimage, alt: 'Boston views'},
+    { id: 14, src: hotpotimage, alt: 'Hotpot in boston'},
+    { id: 15, src: soccersoloimage, alt: 'Soccer'},
     // add more as needed
   ]
 
@@ -34,9 +61,19 @@ function App() {
     "I am a half-marathon runner!",
     "I am an intrepid skier, and have been since I could walk.",
     "I am an avid indie concert goer; check out my Spotify!",
-    "I am a brother, son, grandson, nephew, and cousin.",
-    "I am a cousin. Did I mention I am a cousin?",
-    "I am a frequent consumer of bananas, especially in bread form."
+    "I am a brother, son, grandson, nephew, and cousin. My family is everything to me.",
+    // "I am a cousin. Did I mention I am a cousin?",   
+    // "I am a frequent consumer of bananas, especially in bread form.",
+    "I am a hiker. This was my longest at around 20 miles.",
+    "I am fighting for the climate. My team planted over 1,200 trees in Costa Rica.",
+    // "I am a dog dad and we love to canoe together.",
+    // "I am a biker",
+    "I am a former ski patroller and now a ski instructor.",
+    "I am from Vermont. I love Vermont. I LOVE LOVE LOVE VERMONT!",
+    "I am falling in love with Boston and my life there.",
+    "I am always excited to try new things, especially food.",
+    "I am an *almost* retired soccer player.",
+
   ]
   useEffect(() => {
     // Update window width when the component mounts
