@@ -16,6 +16,7 @@ a {
   display: flex;
   flex-direction: row;
   height: 100vh;
+  width: 100vw;
   background-color: #C4C4C4;
 }
 

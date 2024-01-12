@@ -98,7 +98,7 @@ function App() {
     content =  
     <div className="App">
       <div className="left-col">
-        <Header />
+        <Header bigWindow={true}/>
         <Footer />
       </div>
       <div className="right-col">
@@ -109,7 +109,7 @@ function App() {
     content =
     <div className="App">
       <div className="left-col">
-        <Header />
+        <Header bigWindow={false}/>
       </div>
       <div className="right-col">
         <Loop imagesList={imagesList} captionsList={captionsList}/> {/* perhaps change data structure so that the images line up with the captions better */}
