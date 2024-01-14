@@ -23,16 +23,21 @@ import growthimage from './images/growth.jpg'; // growth
 import miamibeachimage from './images/miamibeach.jpg'; // miami beach
 import mumsimage from './images/mums.jpg'; // son
 import reverebeachimage from './images/reverebeach.jpg'; // revere beach
+// info logos
+import hexc4infologo from './favicons/hexc4-info-50.png';
+import hex33infologo from './favicons/hex33-info-50.png';
 // components
 import Header from './Header.js';
 import Loop from './Loop.js';
 import Footer from './Footer.js';
 // styling
 import './App.css';
+import InfoBubble from './InfoBubble.js';
 
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [showPopup, setShowPopup] = useState(false);
 
   const imagesList = [
     { id: 0, src: powerliftingimage, alt: 'Powerlifting meet with Coach Alec'},
@@ -76,6 +81,15 @@ function App() {
     "I am so much happier outside and in the sun!",
     "I am a member of BostonHacks; a student org that orchestrates BU's largest annual hackathon!"
   ]
+
+  const showInfo = () => {
+    setShowPopup(true);
+  }
+
+  const hideInfo = () => {
+    setShowPopup(false);
+  }
+
   useEffect(() => {
     // Update window width when the component mounts
     const handleResize = () => {
@@ -94,9 +108,11 @@ function App() {
   // Define JSX based on the window width
   let content;
   if (windowWidth >= 768) {
-    // big screen content
+    // big screen content (row form)
     content =  
     <div className="App">
+      <button onClick={showInfo}><img className="info-logo" src={hexc4infologo} alt="More info"/></button>
+      {showPopup && <InfoBubble hideInfo={hideInfo}/>}
       <div className="left-col">
         <Header bigWindow={true}/>
         <Footer />
@@ -107,7 +123,10 @@ function App() {
     </div>;
   } else {
     content =
+    // small screen content (column form)
     <div className="App">
+      <button onClick={showInfo}><img className="info-logo" src={hex33infologo} alt="More info"/></button>
+      {showPopup && <InfoBubble hideInfo={hideInfo}/>}
       <div className="left-col">
         <Header bigWindow={false}/>
       </div>
