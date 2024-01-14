@@ -12,6 +12,10 @@ a {
   background-color: inherit;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 /* page structure */
 .App {
   display: flex;
