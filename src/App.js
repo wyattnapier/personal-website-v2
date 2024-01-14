@@ -111,7 +111,7 @@ function App() {
     // big screen content (row form)
     content =  
     <div className="App">
-      <button onClick={showInfo}><img className="info-logo" src={hexc4infologo} alt="More info"/></button>
+      <button onClick={showInfo}><img className="ilogo" src={hexc4infologo} alt="More info"/></button>
       {showPopup && <InfoBubble hideInfo={hideInfo}/>}
       <div className="left-col">
         <Header bigWindow={true}/>
@@ -125,7 +125,7 @@ function App() {
     content =
     // small screen content (column form)
     <div className="App">
-      <button onClick={showInfo}><img className="info-logo" src={hex33infologo} alt="More info"/></button>
+      <button onClick={showInfo}><img className="ilogo" src={hex33infologo} alt="More info"/></button>
       {showPopup && <InfoBubble hideInfo={hideInfo}/>}
       <div className="left-col">
         <Header bigWindow={false}/>

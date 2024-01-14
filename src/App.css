@@ -77,14 +77,12 @@ button {
   all: unset; /* reset all button styling */
 }
 
-.info-logo {
+.ilogo {
   position: fixed;
   right: 15px;
   top: 15px;
   z-index: 10;
   margin: 5px;
-  height: 32px;
-  width: 32px;
 }
 
 .infobubble-wrapper {
@@ -106,15 +104,18 @@ button {
   border-radius: 10px;
 }
 
-.cancel-logo {
+.ilogo-cancel {
   /* position: fixed;
   z-index: 20;
   top: 15px;
   right: 15px; */
-  height: 32px;
-  width: 32px;
   float: right;
   margin: 0;
+}
+
+[class^="ilogo"] {
+  height: 32px;
+  width: 32px;
 }
 /* end button styling */
 
@@ -162,6 +163,17 @@ button {
   .main-wrapper img {
     max-width: 90%;
     padding: 2vw 1vw 1vw 1vw;
+  }
+
+  .ilogo {
+    right: 7px;
+    top: 7px;
+    margin: 2px;
+  }
+
+  [class^="ilogo"] {
+    height: 16px;
+    width: 16px;
   }
 }
 
