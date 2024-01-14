@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.40e3b7da.css",
-    "main.js": "/static/js/main.970a9156.js",
-    "static/media/bhacks.jpg": "/static/media/bhacks.d1e95e5822f6d51e5708.jpg",
+    "main.css": "/static/css/main.7cac0de9.css",
+    "main.js": "/static/js/main.77f1dbd4.js",
     "static/media/mums.jpg": "/static/media/mums.013c0075dd70acfc63a2.jpg",
     "static/media/turkeytrot.jpg": "/static/media/turkeytrot.ce4e4ffaa222af827d6b.jpg",
     "static/media/reverebeach.jpg": "/static/media/reverebeach.97f8d3a8f9c50c3ae6f3.jpg",
@@ -23,15 +22,16 @@
     "static/media/biking.jpg": "/static/media/biking.b658afaf60ce5f2b7d1a.jpg",
     "static/media/cheffing.jpg": "/static/media/cheffing.d1aac8b5749896aea922.jpg",
     "static/media/dwgconcert.jpg": "/static/media/dwgconcert.f83122accbe26be97724.jpg",
+    "static/media/bhacks_2.jpg": "/static/media/bhacks_2.533cf9e080ea4c3f0593.jpg",
     "static/media/kejicanoe.jpg": "/static/media/kejicanoe.c183fae4337947178b09.jpg",
     "static/media/soccersolo.jpg": "/static/media/soccersolo.a8c6e6625766b42260b0.jpg",
     "static/media/WyattNapierResume.pdf": "/static/media/WyattNapierResume.539a493fb150b2763f6e.pdf",
     "index.html": "/index.html",
-    "main.40e3b7da.css.map": "/static/css/main.40e3b7da.css.map",
-    "main.970a9156.js.map": "/static/js/main.970a9156.js.map"
+    "main.7cac0de9.css.map": "/static/css/main.7cac0de9.css.map",
+    "main.77f1dbd4.js.map": "/static/js/main.77f1dbd4.js.map"
   },
   "entrypoints": [
-    "static/css/main.40e3b7da.css",
-    "static/js/main.970a9156.js"
+    "static/css/main.7cac0de9.css",
+    "static/js/main.77f1dbd4.js"
   ]
 }
