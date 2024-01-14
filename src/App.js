@@ -15,7 +15,7 @@ import bostonimage from './images/boston.jpg'; // Boston views
 import patrolimage from './images/wyattchairlift.jpg'; // patrol on chairlift
 import hotpotimage from './images/hotpot.jpg'; // hotpot
 import soccersoloimage from './images/soccersolo.jpg'; // soccer solo
-import bhacksimage from './images/bhacks.jpg'; // bostonhacks
+import bhacksimage from './images/bhacks_2.jpg'; // bostonhacks
 import bikingimage from './images/biking.jpg'; // biking
 import breadimage from './images/bread.jpg'; // bread meal
 import cheffingimage from './images/cheffing.jpg'; // cheffing
