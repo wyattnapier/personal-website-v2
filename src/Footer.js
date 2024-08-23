@@ -25,11 +25,6 @@ function Footer () {
         <p><a href="https://github.com/wyattnapier/" target="_blank"><img src={githublogo} alt="GitHub logo" className="logo-github"/> GitHub</a></p>
         <p><a href="https://open.spotify.com/user/wyatt~n.?si=ca4612e7bed54639" target="_blank"><img src={spotifylogo} alt="Spotify logo" className="logo-spotify"/> Spotify</a></p>
       </div>
-      {/* <p>If you would like to contact me you can use <a href="mailto:wnapier@bu.edu">email</a> or just go ahead and send me a message on <a href="https://www.linkedin.com/in/wyatt-napier/" target="_blank">LinkedIn</a>. 
-      My <a href={resume} target="_blank">resume</a> is linked here for reference as well.</p>
-      <p>This is an important link you can explore too: <a href="https://github.com/wyattnapier/">GitHub</a>. Oh and here is my <a href="https://open.spotify.com/user/wyatt~n.?si=ca4612e7bed54639">Spotify</a> too!</p> 
-      FAVICONS: <a target="_blank" href="https://icons8.com/icon/8808/linkedin">LinkedIn</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-      */}
     </div>
   )
 }
