@@ -13,4 +13,5 @@ This is a little list of future goals for this website just so I remember:
 ### Suggestions
 Open a pull request and drop your suggestions in this area if you have any:
 - [x] Compress images
+- [x] Add ReadME
 - [ ] Add graphics to home page
