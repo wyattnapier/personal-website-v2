@@ -1,29 +1,3 @@
-// Images.js
-
-// import powerliftingimage from "./images/powerlifting.jpg";
-// import runningimage from "./images/turkeytrot.jpg";
-// import skiingimage from "./images/skiing.jpg";
-// import dwgimage from "./images/dwgconcert.jpg";
-// import famimage from "./images/family.jpg";
-// import cousinimage from "./images/cousin.jpg";
-// import bananaimage from "./images/banana.jpg";
-// import hikingimage from "./images/hiking.jpg";
-// import plantingimage from "./images/planting.jpg";
-// import kejicanoeimage from "./images/kejicanoe.jpg";
-// import vermontimage from "./images/vermont.jpg";
-// import bostonimage from "./images/boston.jpg";
-// import patrolimage from "./images/wyattchairlift.jpg";
-// import hotpotimage from "./images/hotpot.jpg";
-// import soccersoloimage from "./images/soccersolo.jpg";
-// import bhacksimage from "./images/bhacks.jpg";
-// import bikingimage from "./images/biking.jpg";
-// import breadimage from "./images/bread.jpg";
-// import cheffingimage from "./images/cheffing.jpg";
-// import growthimage from "./images/growth.jpg";
-// import miamibeachimage from "./images/miamibeach.jpg";
-// import mumsimage from "./images/mums.jpg";
-// import reverebeachimage from "./images/reverebeach.jpg";
-
 // compressed versions
 import powerliftingimage from "./compressjpeg/powerlifting-min.jpg";
 import runningimage from "./compressjpeg/turkeytrot-min.jpg";
