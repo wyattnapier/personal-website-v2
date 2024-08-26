@@ -1,28 +1,30 @@
 import { React, useState, useEffect } from "react";
 // resources
-import powerliftingimage from "./images/powerlifting.jpg"; // powerlifting
-import runningimage from "./images/turkeytrot.jpg"; // running
-import skiingimage from "./images/skiing.jpg"; // skiing
-import dwgimage from "./images/dwgconcert.jpg"; // dwg concert
-import famimage from "./images/family.jpg"; // family dinner
-import cousinimage from "./images/cousin.jpg"; // posing w/ ella
-import bananaimage from "./images/banana.jpg"; // banana meal
-import hikingimage from "./images/hiking.jpg"; // hiking
-import plantingimage from "./images/planting.jpg"; // ctwk planting in costa rica
-import kejicanoeimage from "./images/kejicanoe.jpg"; // canoeing
-import vermontimage from "./images/vermont.jpg"; // VT views
-import bostonimage from "./images/boston.jpg"; // Boston views
-import patrolimage from "./images/wyattchairlift.jpg"; // patrol on chairlift
-import hotpotimage from "./images/hotpot.jpg"; // hotpot
-import soccersoloimage from "./images/soccersolo.jpg"; // soccer solo
-import bhacksimage from "./images/bhacks_2.jpg"; // bostonhacks
-import bikingimage from "./images/biking.jpg"; // biking
-import breadimage from "./images/bread.jpg"; // bread meal
-import cheffingimage from "./images/cheffing.jpg"; // cheffing
-import growthimage from "./images/growth.jpg"; // growth
-import miamibeachimage from "./images/miamibeach.jpg"; // miami beach
-import mumsimage from "./images/mums.jpg"; // son
-import reverebeachimage from "./images/reverebeach.jpg"; // revere beach
+import images from "./Images.js";
+// import powerliftingimage from "./images/powerlifting.jpg"; // powerlifting
+// import runningimage from "./images/turkeytrot.jpg"; // running
+// import skiingimage from "./images/skiing.jpg"; // skiing
+// import dwgimage from "./images/dwgconcert.jpg"; // dwg concert
+// import famimage from "./images/family.jpg"; // family dinner
+// import cousinimage from "./images/cousin.jpg"; // posing w/ ella
+// import bananaimage from "./images/banana.jpg"; // banana meal
+// import hikingimage from "./images/hiking.jpg"; // hiking
+// import plantingimage from "./images/planting.jpg"; // ctwk planting in costa rica
+// import kejicanoeimage from "./images/kejicanoe.jpg"; // canoeing
+// import vermontimage from "./images/vermont.jpg"; // VT views
+// import bostonimage from "./images/boston.jpg"; // Boston views
+// import patrolimage from "./images/wyattchairlift.jpg"; // patrol on chairlift
+// import hotpotimage from "./images/hotpot.jpg"; // hotpot
+// import soccersoloimage from "./images/soccersolo.jpg"; // soccer solo
+// import bhacksimage from "./images/bhacks.jpg"; // bostonhacks
+// import bikingimage from "./images/biking.jpg"; // biking
+// import breadimage from "./images/bread.jpg"; // bread meal
+// import cheffingimage from "./images/cheffing.jpg"; // cheffing
+// import growthimage from "./images/growth.jpg"; // growth
+// import miamibeachimage from "./images/miamibeach.jpg"; // miami beach
+// import mumsimage from "./images/mums.jpg"; // son
+// import reverebeachimage from "./images/reverebeach.jpg"; // revere beach
+
 // info logos
 import hexc4infologo from "./favicons/hexc4-info-50.png";
 import hex33infologo from "./favicons/hex33-info-50.png";
@@ -52,6 +54,7 @@ function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [showPopup, setShowPopup] = useState(false);
 
+  /**
   const imagesList = [
     { id: 0, src: powerliftingimage, alt: "Powerlifting meet with Coach Alec" },
     { id: 1, src: runningimage, alt: "Turket trot with family" },
@@ -71,6 +74,36 @@ function App() {
     { id: 15, src: soccersoloimage, alt: "Soccer" },
     { id: 16, src: reverebeachimage, alt: "Revere Beach" },
     { id: 17, src: bhacksimage, alt: "Speaking at BostonHacks" },
+    // add more as needed
+  ];
+  */
+  const imagesList = [
+    {
+      id: 0,
+      src: images.powerlifting,
+      alt: "Powerlifting meet with Coach Alec",
+    },
+    { id: 1, src: images.running, alt: "Turket trot with family" },
+    { id: 2, src: images.skiing, alt: "Skiing on big pond" },
+    {
+      id: 3,
+      src: images.dwgConcert,
+      alt: "Del Water Gap concert with friends",
+    },
+    { id: 4, src: images.familyDinner, alt: "Dinner with family" },
+    // { id: 5, src: images.cousinPosing, alt: 'Me and my cousin Ella'},
+    // { id: 6, src: images.bananaMeal, alt: 'Eating a banana'},
+    { id: 7, src: images.hiking, alt: "Hiking with my sister Hailey" },
+    { id: 8, src: images.planting, alt: "Planting trees in Costa Rica" },
+    // { id: 9, src: images.canoeing, alt: 'Dog Keji and canoe'},
+    // { id: 10, src: images.biking, alt: 'Biking'},
+    { id: 11, src: images.patrolChairlift, alt: "Ski patrol on chairlift" },
+    { id: 12, src: images.vermontViews, alt: "Vermont views" },
+    { id: 13, src: images.bostonViews, alt: "Boston views" },
+    { id: 14, src: images.hotpot, alt: "Hotpot in boston" },
+    { id: 15, src: images.soccerSolo, alt: "Soccer" },
+    { id: 16, src: images.revereBeach, alt: "Revere Beach" },
+    { id: 17, src: images.bostonHacks, alt: "Speaking at BostonHacks" },
     // add more as needed
   ];
 
