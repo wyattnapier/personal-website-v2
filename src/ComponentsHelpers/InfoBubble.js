@@ -1,4 +1,4 @@
-import cancellogo from './favicons/cancel-50.png';
+import cancellogo from '../Resources/favicons/cancel-50.png';
 
 function InfoBubble ({hideInfo}) {
   return (

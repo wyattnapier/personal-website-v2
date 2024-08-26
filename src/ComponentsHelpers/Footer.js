@@ -2,12 +2,12 @@
 // should have contact info (linkedIn and email)
   // little pop up box for these would be cool
 // resume linked there too
-import resume from "./WyattNapierResume.pdf";
-import emaillogo from "./favicons/email-32.png";
-import linkedinlogo from "./favicons/linkedin-32.png";
-import resumelogo from "./favicons/pdf-32.png";
-import githublogo from "./favicons/github-32.png";
-import spotifylogo from "./favicons/spotify-32.png";
+import resume from "../Resources/WyattNapierResume.pdf";
+import emaillogo from "../Resources/favicons/email-32.png";
+import linkedinlogo from "../Resources/favicons/linkedin-32.png";
+import resumelogo from "../Resources/favicons/pdf-32.png";
+import githublogo from "../Resources/favicons/github-32.png";
+import spotifylogo from "../Resources/favicons/spotify-32.png";
 
 function Footer () {
   return (
