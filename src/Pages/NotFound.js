@@ -21,6 +21,9 @@ function NotFound() {
       <p>
         <Link to={"/projects"}>Projects</Link>
       </p>
+      <p>
+        <Link to={"/recipes"}>Recipes</Link>
+      </p>
     </div>
   );
 }
