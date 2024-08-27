@@ -9,7 +9,7 @@ import Header from "../ComponentsHelpers/Header.js";
 import Loop from "../ComponentsHelpers/Loop.js";
 import Footer from "../ComponentsHelpers/Footer.js";
 // styling
-import "../App.css";
+import "../Global.css";
 import InfoBubble from "../ComponentsHelpers/InfoBubble.js";
 
 /* 
@@ -108,7 +108,7 @@ function Home() {
   if (windowWidth >= 768) {
     // big screen content (row form)
     content = (
-      <div className="App">
+      <div className="Home">
         <button onClick={showInfo}>
           <img className="ilogo" src={hexc4infologo} alt="More info" />
         </button>
@@ -126,7 +126,7 @@ function Home() {
   } else {
     content = (
       // small screen content (column form)
-      <div className="App">
+      <div className="Home">
         <button onClick={showInfo}>
           <img className="ilogo" src={hex33infologo} alt="More info" />
         </button>
