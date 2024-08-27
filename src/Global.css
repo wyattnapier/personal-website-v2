@@ -17,7 +17,7 @@ a:hover {
 }
 
 /* page structure */
-.App {
+.Home {
   display: flex;
   flex-direction: row;
   height: 100vh;
@@ -42,14 +42,24 @@ a:hover {
   margin: 0.5vw 0;
 }
 
-.contact-links, .other-links {
-  margin: 3vw 0;
-}
-
 .footer-wrapper img {
   height: 1em;
   margin: 0;
 }
+
+.contact-links, .other-links {
+  margin: 3vw 0;
+}
+
+.projects-button {
+  text-align: center;
+  /* background-color: #949494; */
+  background-color: #444444;
+  color: #C4C4C4;
+  padding: 0.5vw 0.25vw;
+  margin: 3vw 6vw;
+}
+
 /* dealing with the logos */
 [class^="logo"] {
   /* margin-right: 1px; */
@@ -126,12 +136,12 @@ button {
 /* for media query, 768px is the tablet size */ 
 @media (max-width: 767px) {
   /* … */
-  .App {
+  .Home {
     display: flex;
     flex-direction: column;
   }
 
-  .App p {
+  .Home p {
     font-size: 0.75em;
   }
 
@@ -182,7 +192,7 @@ button {
 }
 
 @media (max-width: 800px) and (min-width: 768px) {
-  .App p {
+  .Home p {
     font-size: 0.8em;
   }
 
@@ -192,10 +202,16 @@ button {
   }
 }
 
-/* potentially just to work on the switch between short and tall images on small mobile devices */
-/* 
-@media (max-width: 320) {
-  .right-col {
-    min-height: 40vh;
-  }
-} */
+/* styling for NotFound page */
+.NotFound {
+  text-align: center;
+  padding: 40vh 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #c4c4c4;
+}
+
+.NotFound p {
+  margin: 1vw 0;
+  text-decoration: underline;
+}

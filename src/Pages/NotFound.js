@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
-import "../../Global.css";
-import "./NotFound.css";
+import "../Global.css";
 
 function NotFound() {
   return (
