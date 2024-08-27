@@ -1,7 +1,7 @@
 # Welcome to my personal website!
 My name is Wyatt Napier and this is my personal website. 
 I built this to demonstrate some of the aspects of my life that aren't captured by my resume. 
-Feel free to checck it out at [wyattnapier.com](https://wyattnapier.com/) and let me know if you have any suggestions!
+Feel free to check it out at [wyattnapier.com](https://wyattnapier.com/) and let me know if you have any suggestions!
 
 ### Current Pages
 
