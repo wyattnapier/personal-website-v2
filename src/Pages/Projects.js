@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../Global.css";
 import finalPaper from "../Resources/365FinalPaper.pdf";
-// import data from "../Resources/ProjectsInfo.json";
 
 import {
   VerticalTimeline,
@@ -13,7 +12,6 @@ import SchoolIcon from "@mui/icons-material/School";
 import CodeIcon from "@mui/icons-material/Code";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import "react-vertical-timeline-component/style.min.css";
-// use a vertical timeline instead of simple mapping and use the mapping for recipes
 
 function Projects() {
   const scrollToTop = () => {
