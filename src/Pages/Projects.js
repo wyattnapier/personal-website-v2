@@ -208,6 +208,36 @@ function Projects() {
               </a>
             </p>
           </VerticalTimelineElement>
+          {/* Digital Resume */}
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="January 2024 - May 2024"
+            contentStyle={{ background: "#444", color: "#c4c4c4" }}
+            contentArrowStyle={{ borderRight: "7px solid  #444" }}
+            iconStyle={{
+              background: "rgb(33, 120, 50)",
+              color: "#eee",
+              boxShadow: "0 0 0 4px #c4c4c4",
+            }}
+            icon={<SchoolIcon />}
+          >
+            <div style={{ color: "#eee" }}>
+              <h3 className="vertical-timeline-element-title">
+                <a href="https://cs-people.bu.edu/wnapier/cs392/projects/mini-projects/mp3/smart-wyatt-new-resume-home.html">
+                  First Digital Resume
+                </a>
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle">
+                HTML, CSS, JS, Webstorm
+              </h4>
+            </div>
+            <p>
+              Built a basic digital resume with HTML, CSS, and Javascript in
+              webstorm for a course on web development. This website was pretty
+              limited and I didn't like the structure of it which is why I built
+              this application instead. It feels much more like me!
+            </p>
+          </VerticalTimelineElement>
           {/* SongCrostics */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -282,55 +312,50 @@ function Projects() {
         <div className="project-skills-icons-wrapper">
           <h3>Languages and Frameworks</h3>
           <div className="project-skills-icons">
-            {/* angular */}
+            {/* python */}
             <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
-              alt="Angular SVG"
-            />
-            {/* CSS */}
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-              alt="CSS SVG"
-            />
-            {/* flask */}
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"
-              alt="Flask SVG"
-            />
-            {/* git */}
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
-              alt="Git SVG"
-            />
-            {/* html */}
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-              alt="HTML SVG"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+              alt="Python SVG"
             />
             {/* java */}
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
               alt="Java SVG"
             />
+            {/* html */}
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+              alt="HTML SVG"
+            />
+            {/* CSS */}
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+              alt="CSS SVG"
+            />
             {/* javascript */}
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
               alt="JavaScript SVG"
             />
-            {/* ocaml */}
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ocaml/ocaml-original.svg"
-              alt="OCaml SVG"
-            />
-            {/* python */}
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
-              alt="Python SVG"
-            />
             {/* react */}
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
               alt="React SVG"
+            />
+            {/* angular */}
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
+              alt="Angular SVG"
+            />
+            {/* flask */}
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"
+              alt="Flask SVG"
+            />
+            {/* ocaml */}
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ocaml/ocaml-original.svg"
+              alt="OCaml SVG"
             />
             {/* typescript */}
             <img
@@ -342,23 +367,18 @@ function Projects() {
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
               alt="VueJS SVG"
             />
+            {/* git */}
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+              alt="Git SVG"
+            />
           </div>
           <p>
-            Angular, CSS, Flask, HTML, Java, JavaScript, OCaml, Python, React,
-            Typescript, VueJS
+            Python, Java, HTML, CSS, JavaScript, React, Angular, Flask, OCaml,
+            Typescript, VueJS, Git, SQL, NoSQL
           </p>
           <h3>Tools and Applications</h3>
           <div className="project-skills-icons">
-            {/* docker */}
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
-              alt="Docker SVG"
-            />
-            {/* eclipse */}
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg"
-              alt="Eclipse SVG"
-            />
             {/* github */}
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
@@ -368,11 +388,6 @@ function Projects() {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original.svg"
               alt="Jupyter SVG"
-            />
-            {/* latex */}
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg"
-              alt="LaTeX SVG"
             />
             {/* mongodb */}
             <img
@@ -389,15 +404,30 @@ function Projects() {
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
               alt="PostgreSQL SVG"
             />
+            {/* vscode */}
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
+              alt="Visual Studio code SVG"
+            />
             {/* spyder */}
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spyder/spyder-original.svg"
               alt="Spyder SVG"
             />
-            {/* vscode */}
+            {/* eclipse */}
             <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
-              alt="Visual Studio code SVG"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg"
+              alt="Eclipse SVG"
+            />
+            {/* latex */}
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg"
+              alt="LaTeX SVG"
+            />
+            {/* docker */}
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+              alt="Docker SVG"
             />
             {/* webstorm */}
             <img
@@ -406,8 +436,8 @@ function Projects() {
             />
           </div>
           <p>
-            Docker, Eclipse, GitHub, Jupyter, LaTeX, MongoDB, MySQL, PostgreSQL,
-            Spyder, Visual Studio Code, Webstorm
+            GitHub, Jupyter, MongoDB, MySQL, PostgreSQL, Visual Studio Code,
+            Spyder, Eclipse, LaTeX, Docker, Webstorm
           </p>
         </div>
         <button className="project-skills-scroll-up" onClick={scrollToTop}>
