@@ -133,46 +133,6 @@ button {
 }
 /* end button styling */
 
-/* project page styling */
-.project {
-  background-color: #333333;
-  padding: 1vh 0 0 0;
-}
-
-.project-header {
-  width: 100%;
-  padding: 1vh 2vw;
-  margin: -1vh auto 0 auto;
-  background-color: #c4c4c4;
-  border-radius: 0 0 10px 10px;
-}
-
-.project-header h1 {
-  color:#333333
-}
-
-.project-header p {
-  color: #444444
-}
-
-.project-skills {
-  width: 100%;
-  padding: 1vh 2vw;
-  margin: 0 auto;
-  background-color: #c4c4c4;
-  border-radius: 10px 10px 0 0;
-}
-
-.project-skills-scroll-up {
-  display: block;
-  margin: 1vh auto;
-  text-align: center;
-}
-
-.project-skills-scroll-up:hover {
-  text-decoration: underline;
-}
-
 
 /* for media query, 768px is the tablet size */ 
 @media (max-width: 767px) {
@@ -243,6 +203,90 @@ button {
   }
 }
 
+/* project page styling */
+.project {
+  background-color: #333333;
+  padding: 1vh 0 0 0;
+}
+
+.project-header {
+  width: 100%;
+  padding: 1vh 2vw;
+  margin: -1vh auto 0 auto;
+  background-color: #c4c4c4;
+  border-radius: 0 0 10px 10px;
+}
+
+.project-header h1 {
+  color:#333333
+}
+
+.project-header p {
+  color: #444444
+}
+
+.project-skills {
+  width: 100%;
+  padding: 1vh 2vw;
+  margin: 0 auto;
+  /* background-color: #c4c4c4; */
+  background-color: #444444;
+  color: #c4c4c4;
+  border-radius: 10px 10px 0 0;
+}
+
+.project-skills-scroll-up {
+  display: block;
+  margin: 1vh auto;
+  text-align: center;
+}
+
+.project-skills-scroll-up:hover {
+  text-decoration: underline;
+}
+
+.project-skills-icons-wrapper {
+  margin: 4vh auto 2vh auto ;
+  padding: 1vh 1vw;
+  width: 70%;
+  color: #333333;
+  text-align: center;
+  background-color: #c4c4c4;
+  border-radius: 20px;
+}
+
+.project-skills-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center icons horizontally */
+  gap: 10px; /* Space between icons */
+  margin: 1vh auto;
+  padding: 1vh 1vw;
+}
+
+.project-skills-icons img {
+  height: 4vw;
+  width: 4vw;
+}
+
+@media (max-width: 767px) {
+  .project-skills-icons-wrapper {
+    margin: 1vh auto;
+    padding: 1vh 1vw;
+    width: 90%;
+    /* color: #333333; */
+    text-align: center;
+    /* background-color: #c4c4c4; */
+    /* border-radius: 20px; */
+  }
+
+  .project-skills-icons img {
+    height: 6vw;
+    width: 6vw;
+  }
+}
+/* end styling for projects page */
+
 /* styling for NotFound page */
 .NotFound {
   text-align: center;
@@ -256,3 +300,4 @@ button {
   margin: 1vw 0;
   text-decoration: underline;
 }
+/* end styling for NotFound page */
