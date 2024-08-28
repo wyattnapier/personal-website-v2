@@ -16,13 +16,13 @@ function Footer() {
           the following platforms. My information is linked below!
         </p>
         <p>
-          <a href="mailto:wnapier@bu.edu" target="_blank">
+          <a href="mailto:wnapier@bu.edu" target="_blank" rel="noreferrer">
             <img src={emaillogo} alt="Email logo" className="logo-email" />{" "}
             Email
           </a>
         </p>
         <p>
-          <a href="https://www.linkedin.com/in/wyatt-napier/" target="_blank">
+          <a href="https://www.linkedin.com/in/wyatt-napier/" target="_blank" rel="noreferrer">
             <img
               src={linkedinlogo}
               alt="LinkedIn logo"
@@ -38,12 +38,12 @@ function Footer() {
           Below are some other important links that you might want to explore.
         </p>
         <p>
-          <a href={resume} target="_blank">
+          <a href={resume} target="_blank" rel="noreferrer">
             <img src={resumelogo} alt="PDF logo" className="logo-pdf" /> Resume
           </a>
         </p>
         <p>
-          <a href="https://github.com/wyattnapier/" target="_blank">
+          <a href="https://github.com/wyattnapier/" target="_blank" rel="noreferrer">
             <img src={githublogo} alt="GitHub logo" className="logo-github" />{" "}
             GitHub
           </a>
@@ -52,6 +52,7 @@ function Footer() {
           <a
             href="https://open.spotify.com/user/wyatt~n.?si=ca4612e7bed54639"
             target="_blank"
+            rel="noreferrer"
           >
             <img
               src={spotifylogo}

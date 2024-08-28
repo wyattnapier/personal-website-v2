@@ -133,6 +133,37 @@ button {
 }
 /* end button styling */
 
+/* project page styling */
+.project {
+  background-color: #333333;
+  padding: 1vh 0 0 0;
+}
+
+.project-header {
+  width: 95%;
+  padding: 1vh 2vw;
+  margin: 1vh auto 0 auto;
+  background-color: #c4c4c4;
+  border-radius: 10px;
+}
+
+.project-header h1 {
+  color:#333333
+}
+
+.project-header p {
+  color: #444444
+}
+
+.project-skills {
+  width: 100%;
+  padding: 1vh 2vw;
+  margin: 0 auto;
+  background-color: #c4c4c4;
+  border-radius: 10px 10px 0 0;
+}
+
+
 /* for media query, 768px is the tablet size */ 
 @media (max-width: 767px) {
   /* … */
