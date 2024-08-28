@@ -140,11 +140,11 @@ button {
 }
 
 .project-header {
-  width: 95%;
+  width: 100%;
   padding: 1vh 2vw;
-  margin: 1vh auto 0 auto;
+  margin: -1vh auto 0 auto;
   background-color: #c4c4c4;
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
 }
 
 .project-header h1 {
@@ -161,6 +161,16 @@ button {
   margin: 0 auto;
   background-color: #c4c4c4;
   border-radius: 10px 10px 0 0;
+}
+
+.project-skills-scroll-up {
+  display: block;
+  margin: 1vh auto;
+  text-align: center;
+}
+
+.project-skills-scroll-up:hover {
+  text-decoration: underline;
 }
 
 

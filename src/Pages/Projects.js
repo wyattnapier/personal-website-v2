@@ -61,24 +61,26 @@ function Projects() {
           {/* courseGenie */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "#444", color: "#fff" }}
+            contentStyle={{ background: "#444", color: "#c4c4c4" }}
             contentArrowStyle={{ borderRight: "7px solid  #444" }}
             iconStyle={{
               background: "rgb(33, 120, 50)",
-              color: "#fff",
-              // boxShadow: "0 0 0 4px #c4c4c4",
+              color: "#eee",
+              boxShadow: "0 0 0 4px #c4c4c4",
             }}
             date="July 2024 - Present"
             icon={<CodeIcon />}
           >
-            <h3 className="vertical-timeline-element-title">
-              <a href="https://github.com/owenm-26/course-genie">
-                Course Genie
-              </a>
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Angular, Flask, Postgresql, OR-Tools Solver, Web Scraping
-            </h4>
+            <div style={{ color: "#eee" }}>
+              <h3 className="vertical-timeline-element-title">
+                <a href="https://github.com/owenm-26/course-genie">
+                  Course Genie
+                </a>
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle">
+                Angular, Flask, Postgresql, OR-Tools Solver, Web Scraping
+              </h4>
+            </div>
             <p>
               Developed application that allows a user to input the major
               requirements (HUBs) that they desire for the semester and it
@@ -98,21 +100,23 @@ function Projects() {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="May 2024 - August 2024"
-            contentStyle={{ background: "#444", color: "#fff" }}
+            contentStyle={{ background: "#444", color: "#c4c4c4" }}
             contentArrowStyle={{ borderRight: "7px solid  #444" }}
             iconStyle={{
               background: "rgb(33, 120, 50)",
-              color: "#fff",
-              // boxShadow: "0 0 0 4px #c4c4c4",
+              color: "#eee",
+              boxShadow: "0 0 0 4px #c4c4c4",
             }}
             icon={<WorkIcon />}
           >
-            <h3 className="vertical-timeline-element-title">
-              ConceptsNREC Application
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Trame, VueJS, VTK, Python
-            </h4>
+            <div style={{ color: "#eee" }}>
+              <h3 className="vertical-timeline-element-title">
+                ConceptsNREC Application
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle">
+                Trame, VueJS, VTK, Python
+              </h4>
+            </div>
             <p>
               Created a trame application to allow turbomachinery engineers to
               visualize, analyze, and interact with their designs. Captures
@@ -129,23 +133,25 @@ function Projects() {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="January 2024 - May 2024"
-            contentStyle={{ background: "#444", color: "#fff" }}
+            contentStyle={{ background: "#444", color: "#c4c4c4" }}
             contentArrowStyle={{ borderRight: "7px solid  #444" }}
             iconStyle={{
               background: "rgb(33, 120, 50)",
-              color: "#fff",
-              // boxShadow: "0 0 0 4px #c4c4c4",
+              color: "#eee",
+              boxShadow: "0 0 0 4px #c4c4c4",
             }}
             icon={<SchoolIcon />}
           >
-            <h3 className="vertical-timeline-element-title">
-              <a href={finalPaper} target="_blank" rel="noreferrer">
-                Housing Price Prediction Model
-              </a>
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              SVM, PCA, SKLearn, Jupyter Notebooks, Python
-            </h4>
+            <div style={{ color: "#eee" }}>
+              <h3 className="vertical-timeline-element-title">
+                <a href={finalPaper} target="_blank" rel="noreferrer">
+                  Housing Price Prediction Model
+                </a>
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle">
+                SVM, PCA, SKLearn, Jupyter Notebooks, Python
+              </h4>
+            </div>
             <p>
               Created a ML model using Principal Component Analysis (PCA) and
               Support Vector Machines (SVM) to predict housing prices across the
@@ -165,23 +171,25 @@ function Projects() {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="January 2024 - May 2024"
-            contentStyle={{ background: "#444", color: "#fff" }}
+            contentStyle={{ background: "#444", color: "#c4c4c4" }}
             contentArrowStyle={{ borderRight: "7px solid  #444" }}
             iconStyle={{
               background: "rgb(33, 120, 50)",
-              color: "#fff",
-              // boxShadow: "0 0 0 4px #c4c4c4",
+              color: "#eee",
+              boxShadow: "0 0 0 4px #c4c4c4",
             }}
             icon={<SchoolIcon />}
           >
-            <h3 className="vertical-timeline-element-title">
-              <a href="https://github.com/wyattnapier/CommuteCompositions">
-                Commute Compositions
-              </a>
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              ReactJS, Flask, NoSQL, MongoDB
-            </h4>
+            <div style={{ color: "#eee" }}>
+              <h3 className="vertical-timeline-element-title">
+                <a href="https://github.com/wyattnapier/CommuteCompositions">
+                  Commute Compositions
+                </a>
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle">
+                ReactJS, Flask, NoSQL, MongoDB
+              </h4>
+            </div>
             <p>
               Developed a full stack application that takes a user's source,
               destination, and mode of trasnportation to generate a playlist the
@@ -204,21 +212,23 @@ function Projects() {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="August 2023"
-            contentStyle={{ background: "#444", color: "#fff" }}
+            contentStyle={{ background: "#444", color: "#c4c4c4" }}
             contentArrowStyle={{ borderRight: "7px solid  #444" }}
             iconStyle={{
               background: "rgb(33, 120, 50)",
-              color: "#fff",
-              // boxShadow: "0 0 0 4px #c4c4c4",
+              color: "#eee",
+              boxShadow: "0 0 0 4px #c4c4c4",
             }}
             icon={<CodeIcon />}
           >
-            <h3 className="vertical-timeline-element-title">
-              <a href="https://github.com/wyattnapier/songcrostics">
-                Songcrostics
-              </a>
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">ReactJS</h4>
+            <div style={{ color: "#eee" }}>
+              <h3 className="vertical-timeline-element-title">
+                <a href="https://github.com/wyattnapier/songcrostics">
+                  Songcrostics
+                </a>
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle">ReactJS</h4>
+            </div>
             <p>
               Wielded ReactJS and Spotify API to create a playlist that is an
               acrostic where the vertical string is input by the user. This will
@@ -235,19 +245,21 @@ function Projects() {
           <VerticalTimelineElement
             // className="vertical-timeline-element--work"
             date="July 2023 - August 2023"
-            contentStyle={{ background: "#444", color: "#fff" }}
+            contentStyle={{ background: "#444", color: "#c4c4c4" }}
             contentArrowStyle={{ borderRight: "7px solid  #444" }}
             iconStyle={{
               background: "rgb(33, 120, 50)",
-              color: "#fff",
-              // boxShadow: "0 0 0 4px #c4c4c4",
+              color: "#eee",
+              boxShadow: "0 0 0 4px #c4c4c4",
             }}
             icon={<CodeIcon />}
           >
-            <h3 className="vertical-timeline-element-title">
-              Distaster Relief Website
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">ReactJS</h4>
+            <div style={{ color: "#eee" }}>
+              <h3 className="vertical-timeline-element-title">
+                Distaster Relief Website
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle">ReactJS</h4>
+            </div>
             <p>
               Following a historic flood, designed an application for connecting
               local volunteers to those in need to improve response coordination
@@ -258,8 +270,8 @@ function Projects() {
           <VerticalTimelineElement
             iconStyle={{
               background: "rgb(33, 120, 50)",
-              color: "#fff",
-              // boxShadow: "0 0 0 4px #c4c4c4",
+              color: "#eee",
+              boxShadow: "0 0 0 4px #c4c4c4",
             }}
             icon={<ArrowUpwardIcon />}
             iconOnClick={scrollToTop}
@@ -270,8 +282,12 @@ function Projects() {
         <p>
           Bob better get building down here too because right now it looks like
           I have no skills. Least he could do is throw in some pretty icons for
-          the languages and frameworks I know. I've actually been collecting skills like infinity stones!
+          the languages and frameworks I know. I've actually been collecting
+          skills like infinity stones!
         </p>
+        <button className="project-skills-scroll-up" onClick={scrollToTop}>
+          Jump to top
+        </button>
       </div>
     </div>
   );
