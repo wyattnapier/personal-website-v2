@@ -217,8 +217,25 @@ button {
   border-radius: 0 0 10px 10px;
 }
 
-.project-header h1 {
-  color:#333333
+.project-header-split-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-header-left {
+  color:#333333;
+  width: 60%;
+}
+
+.project-header-right {
+  align-self: right;
+  background-color: rgb(33, 120, 50);
+  padding: 1.5vh 2vw;
+  margin: auto 1vw auto auto;
+  border-radius: 20px;
+  max-width: 30%;
+  font-size: larger;
+  color: #eee;
 }
 
 .project-header p {
@@ -246,7 +263,7 @@ button {
 }
 
 .project-skills-icons-wrapper {
-  margin: 4vh auto 2vh auto ;
+  margin: 4vh auto 3vh auto ;
   padding: 1vh 1vw;
   width: 70%;
   color: #333333;
@@ -270,8 +287,33 @@ button {
 }
 
 @media (max-width: 767px) {
+  .project-header-split-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-header-left {
+    color:#333333;
+    max-width: 100%;
+    width: 100%;
+    margin: 3vh 0 -0.5vh 0;
+  }
+  
+  .project-header-right {
+    align-self: right;
+    text-align: center;
+    background-color: rgb(33, 120, 50);
+    padding: 1.5vh 2vw;
+    margin: -1vh -2vw -1.5vh -2vw;
+    border-radius: 0px;
+    max-width: 200%;
+    width: 105%;
+    font-size: normal;
+    color: #eee;
+  }
+
   .project-skills-icons-wrapper {
-    margin: 1vh auto;
+    margin: 1vh auto 2vh auto;
     padding: 1vh 1vw;
     width: 90%;
     /* color: #333333; */

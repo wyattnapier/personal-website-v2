@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../Global.css";
 import finalPaper from "../Resources/365FinalPaper.pdf";
 
+// veritcal timeline imports
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -14,6 +15,15 @@ import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import "react-vertical-timeline-component/style.min.css";
 
 function Projects() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -33,7 +43,23 @@ function Projects() {
   return (
     <div className="project">
       <div className="project-header">
-        <h1>My Projects!</h1>
+        <div className="project-header-split-wrapper">
+          {windowWidth > 767 ? (
+            <>
+              <h1 className="project-header-left">My Projects!</h1>
+              <Link to="/" className="project-header-right">
+                Home
+              </Link>
+            </>
+          ) : (
+            <>
+              <Link to="/" className="project-header-right">
+                Home
+              </Link>
+              <h1 className="project-header-left">My Projects!</h1>
+            </>
+          )}
+        </div>
         <p>
           These are the main projects that I've worked on. I've spent lots of
           time trying to do learn new frameworks and extend my current knowledge
@@ -437,10 +463,22 @@ function Projects() {
             GitHub, Jupyter, MongoDB, MySQL, PostgreSQL, Visual Studio Code,
             Spyder, Eclipse, LaTeX, Docker, Webstorm
           </p>
+          <button
+            className="project-skills-scroll-up"
+            onClick={scrollToTop}
+            style={{
+              backgroundColor: "rgb(33, 120, 50)",
+              color: "#eee",
+              width: "100%",
+              borderRadius: "0 0 20px 20px",
+              // borderRadius: "0 20px",
+              margin: "0 -1vw -1vh -1vw",
+              padding: "2vh 1vw",
+            }}
+          >
+            Jump to top
+          </button>
         </div>
-        <button className="project-skills-scroll-up" onClick={scrollToTop}>
-          Jump to top
-        </button>
       </div>
     </div>
   );
