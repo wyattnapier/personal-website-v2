@@ -4,7 +4,6 @@ import linkedinlogo from "../Resources/favicons/linkedin-32.png";
 import resumelogo from "../Resources/favicons/pdf-32.png";
 import githublogo from "../Resources/favicons/github-32.png";
 import spotifylogo from "../Resources/favicons/spotify-32.png";
-import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -22,7 +21,11 @@ function Footer() {
           </a>
         </p>
         <p>
-          <a href="https://www.linkedin.com/in/wyatt-napier/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.linkedin.com/in/wyatt-napier/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               src={linkedinlogo}
               alt="LinkedIn logo"
@@ -43,7 +46,11 @@ function Footer() {
           </a>
         </p>
         <p>
-          <a href="https://github.com/wyattnapier/" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/wyattnapier/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={githublogo} alt="GitHub logo" className="logo-github" />{" "}
             GitHub
           </a>
@@ -63,9 +70,9 @@ function Footer() {
           </a>
         </p>
       </div>
-      <div className="projects-button">
+      {/* <div className="projects-button">
         <Link to={"/projects"}>Check out my projects too!</Link>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -20,7 +20,7 @@ a:hover {
 .Home {
   display: flex;
   flex-direction: row;
-  height: 150vh; /* was better with 100vh */
+  height: 100vh; /* was better with 100vh */
   width: 100vw;
   background-color: #C4C4C4;
 }
@@ -28,7 +28,7 @@ a:hover {
 /* left col start */
 .left-col {
   width: 30%;
-  padding: 4vw 1vw 12vw 1vw; /* adjust at end to keep centered */
+  padding: 4vh 1vw 12vh 1vw; /* adjust at end to keep centered */
   text-align: left;
   background-color: #C4C4C4; /* really light gray */
   color: #333333;
@@ -39,7 +39,7 @@ a:hover {
 }
 
 .header-wrapper p, .footer-wrapper p {
-  margin: 0.5vw 0;
+  margin: 0.5vh 0;
 }
 
 .footer-wrapper img {
@@ -54,10 +54,12 @@ a:hover {
 .projects-button {
   text-align: center;
   /* background-color: #949494; */
-  background-color: #444444;
-  color: #C4C4C4;
-  padding: 0.5vw 0.25vw;
-  margin: 3vw 6vw;
+  font-size: larger;
+  background-color: rgb(33, 120, 50);
+  color: #eee;
+  width: 120%;
+  padding: 3.5vw 5vw 2vw 5vw;
+  margin: -3.5vw -2.5vw 0vw -2.5vw;
 }
 
 /* dealing with the logos */
@@ -149,6 +151,16 @@ button {
   .left-col {
     width: 100%;
     padding: 0;
+  }
+
+  .projects-button {
+    /* background-color: #333333; */
+    font-size:medium;
+    text-align: center;
+    align-self: center;
+    width: 104.65%;
+    padding: 3.5vw 5vw 2vw 5vw;
+    margin: -3.5vw -2.5vw -1vw -2.5vw;
   }
 
   .footer-wrapper, .header-wrapper {
@@ -307,8 +319,7 @@ button {
     margin: -1vh -2vw -1.5vh -2vw;
     border-radius: 0px;
     max-width: 200%;
-    width: 105%;
-    font-size: normal;
+    width: 104.35%;
     color: #eee;
   }
 

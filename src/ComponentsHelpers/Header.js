@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 function Header({ bigWindow }) {
   return (
     <div className="header-wrapper">
+      <div className="projects-button">
+        <Link to={"/projects"}>My Projects!</Link>
+      </div>
       <h1>Hi, my name is Wyatt Napier</h1>
       {bigWindow ? (
         <>
@@ -19,9 +22,6 @@ function Header({ bigWindow }) {
           </p>
         </>
       )}
-      <div className="projects-button">
-        <Link to={"/projects"}>Check out my projects too!</Link>
-      </div>
     </div>
   );
 }

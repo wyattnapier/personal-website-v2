@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Projects from "./Pages/Projects";
-import Recipes from "./Pages/Recipes";
+// import Recipes from "./Pages/Recipes";
 import NotFound from "./Pages/NotFound";
 
 const App = () => {

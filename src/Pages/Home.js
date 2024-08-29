@@ -13,9 +13,6 @@ import "../Global.css";
 import InfoBubble from "../ComponentsHelpers/InfoBubble.js";
 
 /* 
-TODO:
-- project timeline page
-
 BIG GOALS:
 - add a recipes page to hold all of my recipes
   - build a json file to go with it
@@ -93,10 +90,8 @@ function Home() {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
-
     // Attach event listener for window resize
     window.addEventListener("resize", handleResize);
-
     // Remove event listener when the component unmounts
     return () => {
       window.removeEventListener("resize", handleResize);
