@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "image-path": "../Resources/compressjpeg/mac-and-cheese-min.jpeg",
+    "alt-text": "Scrumptious baked mac and cheese",
+    "link": "https://iheartrecipes.com/wprm_print/southern-baked-macaroni-and-cheese-casserole",
+    "title": "Baked Mac and Cheese",
+    "time": "1:00"
+  },
+  {
+    "id": 2,
+    "image-path": "../Resources/compressjpeg/course-genie-min.jpeg",
+    "alt-text": "Scrumptious baked mac and cheese",
+    "link": "",
+    "title": "Baked Ziti",
+    "time": "1:20"
+  }
+]

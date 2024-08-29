@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "image-path": "../Resources/compressjpeg/course-genie-min.jpeg",
+    "title": "Course Genie",
+    "tech": "Angular, Flask, OR-Tools Solver, Web Scraping",
+    "description": "This application was built by me and Owen",
+    "collaborators": [
+      {
+        "name": "Owen Mariani",
+        "LinkedIn": "https://www.linkedin.com/in/owen-mariani/"
+      }
+    ]
+  },
+  {
+
+  }
+]

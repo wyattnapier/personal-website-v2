@@ -17,14 +17,18 @@ The unchecked boxes are currently in development on another branch. They will be
 - `npm run deploy`
 
 ### TODOs
+
 This is a little list of future goals for this website just so I remember:
 - Add projects page with vertical timeline
 - Add support for highlighting important days like birthdays and anniversaries!
 - Add some new photos and captions every now and agian
 - Add more fun personality pages
+- Add recipes page perhaps structured like how albums are with cover aart and simple name and expected cooktime
 
 ### Suggestions
+
 Open a pull request and drop your suggestions in this area if you have any:
+
 - [x] Compress images
 - [x] Add ReadME
 - [ ] Add graphics to background of Not Found page
